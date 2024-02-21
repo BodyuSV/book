@@ -12,5 +12,12 @@
         <a href="register">Регистрация</a>
         <a href="login">Войти</a>
 {% endif %}
+{% for book in object_list %}
+    {{ book.book_name }}
+    {{ book.Author }}
+    {{ book.cover }}
+    {{ book.genre }}
+    {{ book.date_of_publication }}
+{% endfor %}
 </body>
 </html>
